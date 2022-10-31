@@ -1,5 +1,5 @@
 # ECUT_STUD
-通过python seleniumweb自动化，以及powershell脚本实现开启点击
+通过python selenium web自动化连接校园网，以及powershell脚本实现开启热点
 准备工作
 1.安装好chrome以及对应版本的chromedrive（https://chromedriver.storage.googleapis.com/index.html）
 2.安装python及运行所依赖的库selenium和requests
