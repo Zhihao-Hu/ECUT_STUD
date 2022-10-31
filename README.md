@@ -10,4 +10,5 @@ pip install pyinstaller
 3.将ECUT_STUD.py文件修改后打包成ECUT_STUD.exe
 4.打包后的ECUT_STUD.exe;hotspot.ps1;连接及打开热点.bat放在同一个文件夹。
 5.右键点击‘连接及打开热点.bat’创建快捷方式，将此快捷方式放进开机自启文件夹。路径为C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup
-注意：如果你使用的是无线连接，应该设置wifi为靠近自动连接。
+注意事项1：如果你使用的是无线连接，应该设置wifi为靠近自动连接。
+注意事项2：windows默认不允许运行ps1脚本，所以需要修改策略，以管理员身份打开Windowspowershell，执行指令set-executionpolicy remotesigned即可
