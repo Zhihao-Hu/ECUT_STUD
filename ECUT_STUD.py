@@ -24,7 +24,7 @@ def login():#连接校园网函数
     driver.find_element(By.XPATH,'/html/body/div/div/div[3]/div[3]/form/input[3]').send_keys(学号)#括号内填学号
     driver.find_element(By.XPATH,'/html/body/div/div/div[3]/div[3]/form/input[4]').send_keys('密码')#单引号内填密码
     s = driver.find_element(By.XPATH,'/html/body/div/div/div[3]/div[3]/select')
-    Select(s).select_by_value('@cmcc')#如果你是移动校园网 那不用改；联通改为unicom；电信改为telecom
+    Select(s).select_by_value('@cmcc')#如果你是移动校园网 那不用改；联通将cmcc改为unicom；电信将cmcc改为telecom
     time.sleep(2)
     shit = driver.find_element(By.XPATH, '/html/body/div/div/div[3]/div[3]/form/input[2]')
     driver.execute_script('arguments[0].click()',shit)
